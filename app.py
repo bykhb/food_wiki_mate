@@ -3,7 +3,7 @@ import streamlit as st
 def main():
     st.set_page_config(
         page_title="음식 위키",
-        page_icon="🍽️",
+        page_icon="📝",
         layout="wide"
     )
 
