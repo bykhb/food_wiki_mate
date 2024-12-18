@@ -64,7 +64,7 @@ def main():
             - 달걀 1개
             - 물 100ml
             - 딸기 적당량
-            - 가당 휘핑크림 적당량
+            - 가당 휘핑��림 적당량
             ''')
 
         st.subheader('만드는 방법')
@@ -78,7 +78,74 @@ def main():
         for i, step in enumerate(steps, 1):
             st.write(f'{i}. {step}')
 
-    # 나머지 레시피들도 비슷한 형식으로 구현...
+    elif menu == '초코 크리스마스 케이크':
+        st.header('초코 크리스마스 케이크')
+        st.caption('출처: [만개의레시피](https://www.10000recipe.com/recipe/7040020)')
+        
+        col1, col2 = st.columns(2)
+        with col1:
+            st.subheader('기본 정보')
+            st.write('- 소요시간: 60분 이내')
+            st.write('- 난이도: 초급')
+            st.write('- 분량: 5인분')
+
+        with col2:
+            st.subheader('재료')
+            st.write('''
+            - 다크초코 적당량
+            - 초코 밀크 적당량
+            - 휘핑크림 200g
+            - 딸기 1팩
+            - 젤리빈 (초록 15알, 빨간 5알)
+            - 슈가파우더 적당량
+            ''')
+
+        st.subheader('만드는 방법')
+        steps = [
+            '초코를 중탕하여 녹입니다.',
+            '종이호일에 초코를 얇게 펴서 냉장고에서 굳힙니다.',
+            '케이크 시트에 휘핑크림을 바릅니다.',
+            '딸기를 올리고 초코로 겉면을 장식합니다.',
+            '장난감은 위생적인 것으로 준비하여 장식합니다.',
+            '마지막으로 슈가파우더를 뿌려 마무리합니다.'
+        ]
+        for i, step in enumerate(steps, 1):
+            st.write(f'{i}. {step}')
+
+    elif menu == '크리스마스 컵케이크':
+        st.header('크리스마스 쿠키')
+        st.caption('출처: [만개의레시피](https://www.10000recipe.com/recipe/6862558)')
+        
+        col1, col2 = st.columns(2)
+        with col1:
+            st.subheader('기본 정보')
+            st.write('- 소요시간: 30분 이내')
+            st.write('- 난이도: 초급')
+            st.write('- 분량: 2인분')
+
+        with col2:
+            st.subheader('재료')
+            st.write('''
+            - 버터
+            - 슈가파우더
+            - 바닐라설탕
+            - 달걀흰자
+            - 박력분
+            - 스프링클
+            ''')
+
+        st.subheader('만드는 방법')
+        steps = [
+            '볼에 버터를 넣고 핸드믹서로 부드럽게 풀어줍니다.',
+            '슈가파우더, 바닐라설탕, 소금을 섞어 버터와 충분히 섞어줍니다.',
+            '달걀 흰자를 넣고 고운 크림 상태로 만들어줍니다.',
+            '박력분을 체쳐서 넣고 주걱으로 가볍게 섞어줍니다.',
+            '크리스마스 스프링클을 넣어 섞어줍니다.',
+            '반죽을 평평하게 펴서 모양을 만듭니다.',
+            '170도로 예열된 오븐에서 15분간 구워줍니다.'
+        ]
+        for i, step in enumerate(steps, 1):
+            st.write(f'{i}. {step}')
 
     st.sidebar.markdown('---')
     st.sidebar.caption('Made with ❤️ by [Your Name]')
